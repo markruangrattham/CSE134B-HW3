@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiments</title>
+</head>
+
+
+<body>
+  <header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="aboutme.html">About me</a>
+        <a href="project.html">Project</a>
+        <a href="workexpereince.html">Work Experience</a>
+        <a href="contactme.html">Contact me</a>
+    </nav>
+</header>
+    <h1>Experiments</h1>
+    <button id="button">Click me</button>
+
+    <div class="fun math stuff">
+        <math>
+            <mi>E</mi>
+            <mo>=</mo>
+            <mi>m</mi>
+            <msup>
+                <mi>c</mi>
+                <mn>2</mn>
+            </msup>
+        </math>
+
+        <p> This was probably hard to do until recently because it wasn't supported in all browsers until recently. Only firefox and safari fully supported MathML, and Chrome didn't support it until 2023</p>
+    </div>
+
+    <picture>
+        <source srcset="img/panda-order.jpg" media="(max-width: 600px)">
+        <source srcset="img/panda-order.jpg" media="(max-width: 1000px)">
+        <img src="img/panda-order.jpg" alt="Panda Express meal" width="300" height="300">
+    </picture>
+    
+    <p>This is my panda order.</p>
+
+
+    <canvas id="canvas"> </canvas>
+      
+      <script>
+        const c = document.getElementById("canvas");
+        const ctx = c.getContext("2d");
+        ctx.fillStyle = "lightcoral";
+        ctx.fillRect(40, 20, 147, 60);
+        ctx.font = "14px Comic Sans MS";
+        ctx.fillStyle = "black";
+        ctx.fillText("experimnets are fun!", 45, 55);
+      </script>
+
+      <template>
+        <p>I can't use any sort of javascript for this assigment otherwise I will get points marked off and I dont want that to happen <strong>lol</strong>.</p>
+      </template>
+
+
+      <p>This is my favorite song right now. North Star by Sabai & Hoang feat. Casey Cook.</p>
+      <audio controls>
+        <source src="mp3/northstar.mp3" type="audio/mp3">
+      </audio>
+
+      <p>its worlds seasson letssss goooooooooo</p>
+      <video width="320" height="240" controls>
+        <source src="video/worlds2025.mp4"  type="video/mp4">
+      </video>
+</body>
+</html>
