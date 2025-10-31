@@ -1,0 +1,108 @@
+@import url('style.css');
+
+:root{
+    --hello-world-font: 'Inter', sans-serif;
+}
+
+site-progress{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px;
+    font-family: var(--hello-world-font, Arial, sans-serif);
+}
+
+site-progress label{
+    color: var(--primary-box-color, #4a4a4a);
+}
+
+site-progress .progress-text{
+    font-size: .95rem;
+    color: #666;
+}
+
+.progress{
+    width: 200px;
+    height: 12px;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.progress::-webkit-progress-bar{
+    background-color: #eee;
+    border-radius: 999px;
+}
+
+.progress::-webkit-progress-value{
+    background-color: var(--primary-box-color, #4a4a4a);
+    border-radius: 999px;
+}
+
+.progress::-moz-progress-bar{
+    background-color: var(--primary-box-color, #4a4a4a);
+    border-radius: 999px;
+}
+
+hello-world{
+    display: block;
+    text-align: center;
+    border: 2px solid var(--primary-box-color, #4a4a4a);
+    padding: 20px;
+    margin: 20px;    
+    box-shadow: var(--box-shadow, 0 2px 8px rgba(0,0,0,0.15));
+    font-family: var(--hello-world-font, Arial, sans-serif);
+
+
+    h1{
+        font-size: 2rem;
+        font-weight: 600;
+        color: var(--primary-box-color, #4a4a4a);
+    }
+
+    summary{
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: var(--primary-box-color, #4a4a4a);
+        list-style: none;
+        cursor: pointer;
+    }
+
+
+    h3{
+        font-size: 1rem;
+        font-weight: 100;
+        font-style: italic;
+        color: var(--primary-box-color, #4a4a4a);
+    }
+
+}
+
+
+.to-do-list{
+    display: block;
+    margin: 20px;
+    font-family: var(--hello-world-font, Arial, sans-serif);
+
+    summary{
+        font-family: var(--hello-world-font, Arial, sans-serif);
+        font-weight: 600;
+    }
+
+    h2{
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: var(--primary-box-color, #4a4a4a);
+        margin: 0 0 8px 0;
+        text-align: left;
+    }
+
+    ul{
+        font-family: Georgia, 'Times New Roman', serif;
+        margin: 0;
+        padding-left: 20px;
+        text-align: left;
+    }
+  
+}
+
+

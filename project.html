@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="projects.css">
 
 </head>
 
@@ -14,14 +15,17 @@
     <h1>Woops, JavaScript is not enabled. Please enable it to view this website!</h1>
 </noscript>
 <header>
-<nav role="navigation" aria-label="Main navigation">
+<input type="checkbox" id="nav-toggle" class="nav-toggle">
+<label for="nav-toggle" class="hamburger" aria-label="Toggle navigation" aria-controls="main-nav" aria-expanded="false">
+    <span class="bar"></span>
+</label>
+<nav role="navigation" aria-label="Main navigation" id="main-nav">
         <a href="index.html">Home</a>
         <a href="aboutme.html">About me</a>
         <a href="project.html" aria-current="page">Project</a>
         <a href="workexperience.html">Work Experience</a> 
         <a href="contactme.html">Contact me</a>
-        <a href="experiments.html">Experiments</a>
-        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener noreferrer">Free Cookie</a> <!-- added rel & target -->
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Free Cookie</a>
 </nav>
 
 </header>
@@ -48,7 +52,7 @@
     <h2 style="text-align: center; margin-top: 5rem;">Other Projects</h2>
     <p style="text-align: center;">Here are some of the other projects I've worked on. Click on the cards to learn more about them!</p>
 
-    <projects>
+    <projects-section>
         <input type="checkbox" id="card1" class="card-toggle">
         <label for="card1">
             <project-card>
@@ -171,19 +175,12 @@
 
 
 
-    </projects>
+    </projects-section>
 
-<!-- 
-    <dialog open>
-        <div>
-        <p>Work in progess...</p>
-        </div>
-    </dialog> -->
-
-    </main>
-    <footer>
-        <em>This page was made by <span>&hearts;</span> Mark Ruangrattham</em>
-    </footer>
+</main>
+<footer>
+    <em>This page was made by <span>&hearts;</span> Mark Ruangrattham</em>
+</footer>
 </body>
 </html>
 

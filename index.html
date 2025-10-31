@@ -4,19 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Document</title>
-    <!-- from chatgpt-->
-<script>
-    // Define a new class for your custom element
-    class HelloWorld extends HTMLElement {
-      connectedCallback() {
-        console.log("Hello world!"); // prints to console only
-      }
-    }
-  
-    // Register it with the browser
-    customElements.define('hello-world', HelloWorld);
-  </script>
-<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet" href="style/index.css">
 </head>
 
 
@@ -27,38 +16,61 @@
 
 
 <header>
-<nav>
+
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="hamburger" aria-label="Toggle navigation" aria-controls="main-nav" aria-expanded="false">
+        <span class="bar"></span>
+    </label>
+
+    <nav id="main-nav">
         <a href="index.html" aria-current="page">Home</a>
         <a href="aboutme.html">About me</a>
         <a href="project.html">Project</a>
         <a href="workexperience.html">Work Experience</a>
-        <a href="experiments.html">Experiments</a>
         <a href="contactme.html">Contact me</a>
-
         <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Free Cookie</a>
-</nav>
+
+    </nav>
+    
 </header>
 
 
 <main>
-    <h1>Hello World</h1>
-    <h2>This is my second assigment for </h2>
-    <h3> CSE-134B </h3>
-    <p>Made By <b>Mark</b> <i>Ruangrattham</i></p>
+
+    <hello-world>
+        <h1>Hello World</h1>
+        <details>
+            <summary>Welcome to Mark.com</summary>
+            <h3>or whatever url i get my hands on and what i could afford to buy</h3>
+        </details>
+        
+        <p>This is my personal website where I share my projects, work experience, personal thoghts, what I'm current up to and more!</p>
+    </hello-world>
+
 </main>
 
-<section>
-    <h2>Why am I taking this class?</h2>
-    <ol>
-        <li>I want to learn more about web development</li>
-        <li> I dont't just want to use div div div div</li>
-        <li> I want to learn more about the foundation of web development and not the fashion</li>
-    </ol> 
-</section>
 
-<label for="progress">Progress of my website:</label>
-<progress id="progress" value="10" max="100">70%</progress>
+<details class="to-do-list">
+    <summary>To‑Do (as of 10/30/2025)</summary>
+    <ul>
+        <li>Add JS to the website (when I'm allowed to)</li>
+        <li>Add a /thoughts section</li>
+        <li>Add a /current section</li>
+        <li>Add a /whyhireme section</li>
+        <li>Make project page mobile support</li>
+        <li>Form works on contact me page</li>
+        <li>AI Chatbot on the website to answer questions about Mark</li>
+        <li>Choose a color theme for the website</li>
+        <li>Improve CSS code on most of the pages</li>
+        <li>Add black and white theme for the website</li>
+    </ul>
+</details>
 
+<site-progress>
+    <label for="progress">Progress of my website:</label>
+    <progress class="progress" value="30" max="100">30%</progress>
+    <p class="progress-text">30%</p>
+</site-progress>
 
 
 <footer>

@@ -4,16 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
-    <style>
-        about-me {
-            display: block;
-      border: 2px solid black;   
-          
-  
-      }
-    </style>
-    <link rel="stylesheet" href="style.css">
 
+    <link rel="stylesheet" href="style/aboutme.css">
 
 </head>
 
@@ -26,13 +18,16 @@
 
 
 <header>
-    <nav>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="hamburger" aria-label="Toggle navigation" aria-controls="main-nav" aria-expanded="false">
+        <span class="bar"></span>
+    </label>
+    <nav id="main-nav">
         <a href="index.html">Home</a>
         <a href="aboutme.html" aria-current="page">About Me</a>
         <a href="project.html">Project</a>
         <a href="workexperience.html">Work Experience</a>
         <a href="contactme.html">Contact me</a>
-        <a href="experiments.html">Experiments</a>
         <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Free Cookie</a>
     </nav>
 </header>
@@ -57,24 +52,82 @@
                 challenges, and continuing to learn along the way.
         </about-me>
     </article>
+
+    <fun-facts>
+        <details>
+            <summary class="fun-facts">Fun Facts About Me!</summary>
+
+            <details>
+                <summary class="favorite-food">Favorite Food Restaurant</summary>
+                <ul>
+                    
+                        
+                            <li>Panda Express</li>
+                            <li>INI Ristorante</li>
+                            <li>Ramen Nagi</li>
+                            <li>Shake Shack or In and Out Burger</li>
+                            <li>Taco Stand</li>
+                            <li>This pizza place in Downtown San Diego(yes i'm gate keeping this one)</li>
+                        
+                    
+                </ul>
+            </details>
+
+            <details>
+                <summary class="current-setup">Current Setup</summary>
+                <ul>
+                    <li>MacBook Pro 14-inch 2025</li>
+                    <li>Ipad Air 2022 5th Generation</li>
+                    <li>Iphone 15 Pro</li>
+                    <li>Apple Watch SE 1</li>
+                    <li>PC Build
+                        <ul>
+                            <li>CPU: Ryzen 7 5700G</li>
+                            <li>GPU: RTX 3060</li>
+                            <li>RAM: 16GB DDR4</li>
+                            <li>Storage: 256GB SSD + 1TB HDD</li>
+                        </ul>
+                    </li>
+                    <li>Consoles
+                        <ul>
+                            <li>PS5</li>
+                            <li>Nintendo Switch</li>
+                        </ul>
+                    </li>
+                
+                </ul>
+            </details>
+
+            <details>
+                <summary class="hoobies">Hoobies</summary>
+                <ul>
+                    <li>I'm a type of person that can never stay still for too long so I have a lot of active hobbies that I've tried and loved.
+                        <ol>
+                            <li>Soccer</li>
+                            <li>Working Out</li>
+                            <li>Running(was on the cross country and track team in high school)</li>
+                            <li>Trying out new sports or hoodies</li>
+                        </ol>
+                    <li>
+                        I love watching sports during my free time, I'm from LA orginally so a big fan of all the LA sports teams, Dodgers, Lakers, Rams LAFC.
+                    </li>
+                </ul>
+            </details>
+
+            <details>
+                <summary class="hidden-facts">Hidden Facts About Me!</summary>
+                <ul>
+                    <li>I own one of the largest FC Mobile Communinty in the world called Valhalla FC</li>
+                    <li>I'm a huge Manchester United fan</li>
+                    <li>I write with my right hand but I left foot is my dominant foot</li>
+                </ul>
+            </details>
+
+        </details>
+    </fun-facts>
     
 
-    <section>
-        <h2>Fun Facts About Me!</h2>
-        <ul>
-            <li>During my free time, I love to play soccer and work out at the gym.</li>
-            <li>My go-to Panda Express order is half white rice and super greens with double teriyaki chicken.</li>
-            <li><img src="img/panda-order.jpg" alt="Panda Express meal" width="300" height="300"></li>
-            <li>My favorite soccer player is Lionel Messi.</li>
-            
-                <li><iframe width="560" height="315"
-                        src="https://www.youtube.com/embed/ZmKy_fnRM_E?si=TpbDSgIvWtUHArJn"
-                        title="YouTube video player" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-        </iframe></li>
-        </ul>
-    </section>
+
 
     <footer>
         <em>This page was made by <span>&hearts;</span> Mark Ruangrattham</em>

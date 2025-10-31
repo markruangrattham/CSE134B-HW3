@@ -4,15 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style.css">
-<style>
- social-links {
-  display: inline-block;
-  border: 10px solid black;
-
-}
-</style>
+    <link rel="stylesheet" href="style/contactme.css">
 </head>
 
 
@@ -23,15 +15,18 @@
     </noscript>
 
         <header>
-            <nav>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="hamburger" aria-label="Toggle navigation" aria-controls="main-nav" aria-expanded="false">
+                <span class="bar"></span>
+            </label>
+            <nav id="main-nav">
                     <a href="index.html">Home</a>
                     <a href="aboutme.html">About me</a>
                     <a href="project.html">Project</a>
                     <a href="workexperience.html">Work Experience</a>
                     <a href="contactme.html" aria-current="page">Contact me</a>
-                    <a href="experiments.html">Experiments</a>
                     <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Free Cookie</a>
-            </nav>
+    </nav>
         </header>
         <div class="social-links">
         <social-links>
@@ -52,7 +47,8 @@
         </a>
       </social-links>
     </div>
-<form action="https://httpbin.org/post" method="POST">
+
+<form action="https://httpbin.org/post" method="POST" class="contact-form">
     <fieldset>
         <legend>Send me a message!</legend>
     <label for="name"><strong>Name:</strong></label>

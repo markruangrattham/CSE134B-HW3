@@ -1,57 +1,7 @@
-:root{
-    --primary-box-color: #000;
-    --secondary-color: #f4f4f4;
-    --font-family: Arial, sans-serif;
-    --box-shadow: 0 0.25rem 0.5rem rgba(0,0,0,0.1);
-}
+@import url('style.css');
 
-header{
-    text-align: center;
-}
-
-nav{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 1rem 2rem;
-    margin: 1rem auto;
-    max-width: 50rem;
-    border: 2px solid var(--primary-box-color);
-    border-radius: 1rem;
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15);
-    backdrop-filter: blur(10px);
-}
-
-nav a{
-    padding: 0.75rem 1.5rem;
-    text-decoration: none;
-    color: var(--primary-box-color);
-    font-weight: 500;
-    border-radius: 0.75rem;
-    transition: all 240ms ease;
-    position: relative;
-    overflow: hidden;
-}
-
-nav a:hover{
-    color: var(--secondary-color);
-    background-color: var(--primary-box-color);
-    transform: translateY(-2px);
-    box-shadow: var(--box-shadow);
-}
-
-nav a:active{
-    transform: translateY(0);
-    box-shadow: var(--box-shadow);
-}
-
-nav a[aria-current="page"]{
-    color: var(--secondary-color);
-    background-color: var(--primary-box-color);
-}
-projects{
+/* Projects Styles */
+projects-section{
     display: grid;
     grid-template-columns: repeat(3, 18.75rem);
     grid-template-rows: repeat(3, 1fr);
@@ -99,7 +49,7 @@ project-card{
     border: 0.0625rem solid #ccc;         
     border-radius: 1rem;      
     padding: 1rem;   
-    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1); 
+    box-shadow: var(--box-shadow); 
     transition: transform 240ms ease, box-shadow 240ms ease;
     transform-origin: center;
     will-change: transform, box-shadow;
@@ -201,11 +151,4 @@ project-card img{
         font-size: 0.85rem;
     }
 }
-
-
-
-
-
-
-
 
