@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Experiments</title>
+    <link rel="stylesheet" href="style/style.css">
 </head>
 
 
@@ -14,12 +15,21 @@
         <span class="bar"></span>
     </label>
     <nav id="main-nav">
-        <a href="index.html">Home</a>
-        <a href="aboutme.html">About me</a>
-        <a href="project.html">Project</a>
-        <a href="workexperience.html">Work Experience</a>
-        <a href="contactme.html">Contact me</a>
-        <a href="experiments.html" aria-current="page">Experiments</a>
+        <a href="index.html" class="nav-link nav-light">Home</a>
+        <a href="index.html#dark" class="nav-link nav-dark">Home</a>
+        <a href="aboutme.html" class="nav-link nav-light">About me</a>
+        <a href="aboutme.html#dark" class="nav-link nav-dark">About me</a>
+        <a href="project.html" class="nav-link nav-light">Project</a>
+        <a href="project.html#dark" class="nav-link nav-dark">Project</a>
+        <a href="workexperience.html" class="nav-link nav-light">Work Experience</a>
+        <a href="workexperience.html#dark" class="nav-link nav-dark">Work Experience</a>
+        <a href="contactme.html" class="nav-link nav-light">Contact me</a>
+        <a href="contactme.html#dark" class="nav-link nav-dark">Contact me</a>
+        <a href="experiments.html" class="nav-link nav-light" aria-current="page">Experiments</a>
+        <a href="experiments.html#dark" class="nav-link nav-dark" aria-current="page">Experiments</a>
+        <a href="#dark" class="toggle-link">Dark mode</a>
+        <a href="experiments.html" class="toggle-link">Light mode</a>
+        <span id="dark"></span>
     </nav>
 </header>
     <h1>Experiments</h1>

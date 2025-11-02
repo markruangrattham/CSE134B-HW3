@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project</title>
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="projects.css">
+    <link rel="stylesheet" href="style/projects.css">
 
 </head>
 
@@ -20,12 +19,20 @@
     <span class="bar"></span>
 </label>
 <nav role="navigation" aria-label="Main navigation" id="main-nav">
-        <a href="index.html">Home</a>
-        <a href="aboutme.html">About me</a>
-        <a href="project.html" aria-current="page">Project</a>
-        <a href="workexperience.html">Work Experience</a> 
-        <a href="contactme.html">Contact me</a>
+        <a href="index.html" class="nav-link nav-light">Home</a>
+        <a href="index.html#dark" class="nav-link nav-dark">Home</a>
+        <a href="aboutme.html" class="nav-link nav-light">About me</a>
+        <a href="aboutme.html#dark" class="nav-link nav-dark">About me</a>
+        <a href="project.html" class="nav-link nav-light" aria-current="page">Project</a>
+        <a href="project.html#dark" class="nav-link nav-dark" aria-current="page">Project</a>
+        <a href="workexperience.html" class="nav-link nav-light">Work Experience</a>
+        <a href="workexperience.html#dark" class="nav-link nav-dark">Work Experience</a>
+        <a href="contactme.html" class="nav-link nav-light">Contact me</a>
+        <a href="contactme.html#dark" class="nav-link nav-dark">Contact me</a>
         <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Free Cookie</a>
+        <a href="#dark" class="toggle-link">Dark mode</a>
+        <a href="project.html" class="toggle-link">Light mode</a>
+        <span id="dark"></span>
 </nav>
 
 </header>
