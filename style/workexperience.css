@@ -21,6 +21,7 @@ timeline-grid {
     position: relative;
     padding: clamp(2rem, 5vw, 3rem) 0;
     margin: clamp(1rem, 3vw, 2rem) 0;
+    min-height: 60dvh;
 
     timeline-line {
         position: absolute;
@@ -67,18 +68,15 @@ timeline-grid {
             width: 100%;
             max-width: clamp(15rem, 25vw, 20rem);
             box-sizing: border-box;
-            color: var(--fg);
 
             h3 {
                 font-size: clamp(0.75rem, 1.5vw, 1rem);
-                color: var(--fg);
                 font-family: var(--experience-font);
                 font-weight: 600;
                 margin: 0 0 clamp(0.25rem, 1vw, 0.5rem) 0;
             }
             h4 {
                 font-size: clamp(0.625rem, 1.2vw, 0.875rem);
-                color: var(--fg);
                 font-family: var(--experience-font);
                 font-weight: 400;
                 margin: 0;
@@ -86,7 +84,6 @@ timeline-grid {
 
             p {
                 font-size: clamp(0.625rem, 1.2vw, 0.875rem);
-                color: var(--fg);
                 font-family: var(--experience-font);
                 font-weight: 400;
                 margin: 0;
@@ -112,12 +109,10 @@ timeline-grid {
                 p {
                     margin: clamp(0.25rem, 1vw, 0.5rem) 0;
                     font-size: clamp(0.625rem, 1.2vw, 0.875rem);
-                    color: var(--fg);
                     font-family: var(--experience-font);
                 }
 
                 strong {
-                    color: var(--fg);
                     font-weight: 600;
                 }
             }
@@ -142,7 +137,7 @@ timeline-grid {
             border-color: var(--accent);
 
             experience-details {
-                max-height: clamp(20rem, 40vw, 30rem);
+                max-height: min(clamp(20rem, 40vw, 30rem), 80dvh);
                 opacity: 1;
                 margin-top: clamp(0.5rem, 1.5vw, 1rem);
                 background-color: light-dark(#ffffff, #121826);
@@ -150,7 +145,6 @@ timeline-grid {
                 border-radius: clamp(4px, 0.5vw, 6px);
                 padding: clamp(0.5rem, 1.5vw, 1rem);
                 box-shadow: var(--box-shadow);
-                color: var(--fg);
             }
         }
     }

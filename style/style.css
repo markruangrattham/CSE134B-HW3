@@ -1,6 +1,6 @@
 :root{
     color-scheme: light dark;
-    --font-family: Arial, sans-serif;
+    --font-family: 'Inter', Arial, sans-serif;
     --bg: light-dark(#ffffff, #0b0f19);
     --fg: light-dark(#111111, #eaeefb);
     --muted: light-dark(#6b7280, #9aa4b2);
@@ -44,9 +44,6 @@ html:has(#dark:target)       { color-scheme: dark;  }
     background: var(--card);
 }
 
-.toggle-link[href="#dark"] {
-    display: inline-flex;
-}
 html:has(#dark:target) .toggle-link[href="#dark"] {
     display: none;
 }
@@ -70,7 +67,6 @@ html:has(#dark:target) .nav-dark {
 html:has(#dark:target) .nav-light {
     display: none;
 }
-
 
 .nav-toggle{ position:absolute; opacity:0; pointer-events:none; }
 .hamburger{ display:none; cursor:pointer; user-select:none; padding:0.4rem; background:transparent; border:none; position:relative; }
@@ -124,7 +120,6 @@ nav a[aria-current="page"]{
     color: var(--secondary-color);
     background-color: var(--accent);
 }
-
 
 @media (max-width: 820px){
     nav{
@@ -184,32 +179,6 @@ body {
     color: var(--fg);
 }
 
-h1, h2, h3{
-    color: var(--fg);
+main {
+    min-height: 15dvh;
 }
-
-p{
-    color: var(--fg);
-}
-
-legend {
-    color: var(--fg);
-}
-
-article {
-    color: var(--fg);
-}
-
-ul, ol, li {
-    color: var(--fg);
-}
-
-
-
-
-footer > em > span{
-    color: var(--fg);
-}
-
-
-

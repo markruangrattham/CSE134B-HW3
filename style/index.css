@@ -12,13 +12,8 @@ site-progress{
     font-family: var(--hello-world-font, Arial, sans-serif);
 }
 
-site-progress label{
-    color: var(--fg);
-}
-
 site-progress .progress-text{
     font-size: .95rem;
-    color: var(--fg);
 }
 
 .progress{
@@ -50,7 +45,6 @@ hello-world{
     padding: 20px;
     margin: 20px;
     background: var(--card);
-    color: var(--fg);
     border-radius: 12px;
     box-shadow: var(--box-shadow);
     font-family: var(--hello-world-font, Arial, sans-serif);
@@ -58,44 +52,36 @@ hello-world{
     h1{
         font-size: 2rem;
         font-weight: 600;
-        color: var(--fg);
     }
 
     summary{
         font-size: 1.5rem;
         font-weight: 500;
-        color: var(--fg);
         list-style: none;
         cursor: pointer;
     }
 
-    h3{
+    h3 {
         font-size: 1rem;
         font-weight: 100;
         font-style: italic;
-        color: var(--fg);
     }
-
 }
 
-
-.to-do-list{
+.to-do-list {
     display: block;
     margin: 20px;
     font-family: var(--hello-world-font, Arial, sans-serif);
-    color: var(--fg);
 
     summary{
         font-family: var(--hello-world-font, Arial, sans-serif);
         font-weight: 600;
-        color: var(--fg);
         cursor: pointer;
     }
 
     h2{
         font-size: 1.25rem;
         font-weight: 600;
-        color: var(--fg);
         margin: 0 0 8px 0;
         text-align: left;
     }
@@ -105,9 +91,5 @@ hello-world{
         margin: 0;
         padding-left: 20px;
         text-align: left;
-        color: var(--fg);
     }
-  
 }
-
-

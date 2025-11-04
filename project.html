@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/projects.css">
 
 </head>
@@ -43,10 +46,15 @@
     <project-highlight role="region" aria-label="Project: Valhalla Bot" tabindex="0">
         <h2>Valhalla Bot</h2>
         <h3>September 2024 - Present</h3>
-        <p>A passion project of mine that I have been working on for over a year now. Valhalla bot is a Discord bot for a FC Mobile game community. That I'm a part of called Valhalla. The bot is built using Python and the Discord library. 
+            <p>A passion project of mine that I have been working on for over a year now. Valhalla bot is a Discord bot for a FC Mobile game community. That I'm a part of called Valhalla. The bot is built using Python and the Discord library. 
             It has all the features that premium bots have but more personalized for our community. Most of the data is stored in a MongoDB database! </p>
 
-            <img  style="max-width: 25%;" src="img/projects/valhalla_FC.webp" alt="Valhalla Bot Screenshot" />
+            <picture>
+              <source srcset="img/projects/valhalla-fc-640.webp 640w,
+                              img/projects/valhalla-fc-978.webp 978w"
+                      type="image/webp">
+              <img style="max-width: 25%;" src="img/projects/valhalla-fc-978.webp" alt="Valhalla Bot Screenshot" />
+            </picture>
 
             <ul class="tools" aria-label="Tools used">
                 <li class="tool" title="Python">Py</li>
@@ -57,7 +65,7 @@
 
 
     <h2 style="text-align: center; margin-top: 5rem;">Other Projects</h2>
-    <p style="text-align: center;">Here are some of the other projects I've worked on. Click on the cards to learn more about them!</p>
+    <p style="text-align: center;">Here are some of the other projects I've worked on. <strong>Click on the cards</strong> to learn more about them!</strong></p>
 
     <projects-section>
         <input type="checkbox" id="card1" class="card-toggle">
@@ -67,7 +75,13 @@
                 <span style="font-size: 1rem; font-weight: normal; ">July 2025 - Present</span>
                 </h3>
                 <p>I need to be better at managing my money, so I thought why not build a nice little web app for this that can track my expenses and see how much I'm spending on doordash each month.</p>
-                <img src="img/projects/leafybucks.webp" alt="Leafybucks screenshot" />
+                <picture>
+              <source srcset="img/projects/leafybucks-640.webp 640w,
+                              img/projects/leafybucks-1280.webp 1280w,
+                              img/projects/leafybucks-1535.webp 1535w"
+                      type="image/webp">
+              <img src="img/projects/leafybucks-1535.webp" alt="Leafybucks screenshot" />
+                </picture>
                 <project-details>
                     <p><strong>Status:</strong> In Development</p>
                     <p><strong>Features:</strong> Expense tracking, budget management, category analysis, and spending trends visualization.</p>
@@ -106,7 +120,12 @@
                 <span style="font-size: 1rem; font-weight: normal; ">August 2025 - Present</span>
                 </h3>
                 <p>A discord bot that my friend used started to get boreding so they asked me if I could make a better one. Challenged accepted.</p>
-                <img src="img/projects/futdex.webp" alt="Futbol Dex Screenshot" />
+                <picture>
+                  <source srcset="img/projects/futdex-640.webp 640w,
+                                  img/projects/futdex-1080.webp 1080w"
+                          type="image/webp">
+                  <img src="img/projects/futdex.jpg" alt="Futbol Dex Screenshot" />
+                </picture>
                 <project-details>
                     <p><strong>Status:</strong> Beta Testing Phase</p>
                     <p><strong>Features:</strong> Gcloud was used as the main framework for the bot. However we also used Django as the framework for the website. I created custom API endpoints that will allow the desingers to upload the cards from the website and the discord bot itself can call these API reandomly to spawn the card.</p>
@@ -126,7 +145,11 @@
                 <span style="font-size: 1rem; font-weight: normal; ">January 2025</span>
                 </h3>
                 <p>Had time one night to make something fun for a community event for Valhlla FC and vibe coded a quick little spinner for the event.</p>
-                <img src="img/projects/flag_spinner.gif" alt="Valhalla World Cup Spinner" />
+                <picture>
+                  <source srcset="img/projects/flag-spinner-fixed-640.gif 640w"
+                          type="image/gif">
+                  <img src="img/projects/flag_spinner.gif" alt="Valhalla World Cup Spinner" />
+                </picture>
                 <project-details>
                     <p><strong>Status:</strong> Completed</p>
                     <p><strong>Features:</strong>Frontend was made using React and the backend was made using Python. The spinner is connected to a little database that stores infomation about all the players that signed up for the event. It then displays their discord icon and picks a random country to give the player. Result is then saved to a file!</p>
@@ -147,7 +170,11 @@
 
                 </h3>
                 <p>Girlfriend brithday and I was a little broke back then, so I deicded to use my degree to code a little something for her that would countdown to her birthday and would reval a secert video after!.</p>
-                <img src="img/projects/bb birthday.gif" alt="Birthday Countdown" />
+                <picture>
+                  <source srcset="img/projects/bb-birthday-fixed-640.gif 640w"
+                          type="image/gif">
+                  <img src="img/projects/bb birthday.gif" alt="Birthday Countdown" />
+                </picture>
                 <project-details>
                     <p><strong>Status:</strong> Completed</p>
                     <p><strong>Features:</strong> My first really project I made with React. It's a simple countdown timer that updates every second and shows a secret video after the countdown reaches 0. It also a music player as well!</p>
@@ -168,7 +195,12 @@
                 <span style="font-size: 1rem; font-weight: normal; ">October 2025 - Present</span>
                 </h3>
                 <p>I'm a massive football fan(I dont't care thats the name of the game) and I thought it would be fun to try and predict the outcomes of the matches for the Premier League. I'm using a simple machine learning model to predict the outcomes of the matches.</p>
-                <img src="img/projects/premier league.jpg" alt="Premier League Match Predictor" />
+                <picture>
+                  <source srcset="img/projects/premier-league-640.webp 640w,
+                                  img/projects/premier-league-900.webp 900w"
+                          type="image/webp">
+                  <img src="img/projects/premier league.jpg" alt="Premier League Match Predictor" />
+                </picture>
                 <project-details>
                     <p><strong>Status:</strong> Planning Phase</p>
                     <p><strong>Features:</strong> Gives you an prediction of the outcome of the match based on the team's recent form and if they have any injuries or suspensions.</p>
@@ -179,9 +211,6 @@
                 </project-details>
             </project-card>
         </label>
-
-
-
     </projects-section>
 
 </main>
